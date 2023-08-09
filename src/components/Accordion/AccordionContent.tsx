@@ -1,5 +1,4 @@
 import { useContext } from "react";
-import useAccordion from "./hooks/useAccordion";
 import { AccordionContext } from "./Accordion";
 
 interface AccordionContentPropsType {

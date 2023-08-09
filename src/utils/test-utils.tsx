@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
 import { BrowserRouter } from "react-router-dom";
-import { render, RenderOptions } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 
 const customRender = (ui: ReactElement, { route = "/" } = {}) => {

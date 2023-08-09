@@ -11,7 +11,7 @@ describe("app component tests", () => {
   });
 
   it("shows star component on clicking on star link in the sidebar", async () => {
-    const { user } = render(<StarRating />, { route: "/star_rating" });
+    render(<StarRating />, { route: "/star_rating" });
     //await user.click(screen.getByText("Star Rating"));
     expect(screen.getByText(/Your given rating is/i)).toBeInTheDocument();
   });
