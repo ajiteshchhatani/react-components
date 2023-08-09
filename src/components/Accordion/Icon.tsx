@@ -6,7 +6,7 @@ interface IconPropsType {
 const Icon = ({ id, ...svgProps }: IconPropsType) => {
   return (
     <svg {...svgProps}>
-      <use href={`./public/icons.svg#${id}`} />
+      <use href={`/icons.svg#${id}`} />
     </svg>
   );
 };

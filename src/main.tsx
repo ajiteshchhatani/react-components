@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App.tsx";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import AccordionHome from "./components/Accordion/index.tsx";
+import StarRating from "./components/Star_Rating/index.tsx";
 
 const routes = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const routes = createBrowserRouter([
       {
         index: true,
         element: <AccordionHome />,
+      },
+      {
+        path: "star_rating",
+        element: <StarRating />,
       },
     ],
   },
