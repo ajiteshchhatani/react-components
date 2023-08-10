@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { AccordionContext } from "./Accordion";
-import Icon from "./Icon";
+import Icon from "../Icon";
 
 interface AccordionTitlePropsType {
   heading: string;

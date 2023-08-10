@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Icon from "../Accordion/Icon";
+import Icon from "../Icon";
 
 interface RatingsType {
   [key: number]: string;
