@@ -1,5 +1,5 @@
 import { describe, vi } from "vitest";
-import { render, renderWithContext, screen } from "../../../utils/test-utils";
+import { renderWithContext, screen } from "../../../utils/test-utils";
 import AccordionTitle from "../AccordionTitle";
 import Icon from "../../Icon";
 
