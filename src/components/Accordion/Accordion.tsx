@@ -5,7 +5,7 @@ interface AccordionPropsType {
   isOpen?: boolean;
 }
 
-interface AccordionContextType {
+export interface AccordionContextType {
   panelOpen: boolean;
   setPanelOpen: () => void;
 }

@@ -6,7 +6,6 @@ interface AccordionContentPropsType {
 }
 const AccordionContent = ({ children }: AccordionContentPropsType) => {
   const { panelOpen } = useContext(AccordionContext);
-  console.log("content panel open", panelOpen);
   return <div className={`${panelOpen ? `block` : `hidden`}`}>{children}</div>;
 };
 

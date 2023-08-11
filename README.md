@@ -1,3 +1,5 @@
+![deploy](https://github.com/ajiteshchhatani/react-components/actions/workflows/deploy.yml/badge.svg)
+
 # Components built using React and TypeScript
 
 This repo houses few common components built using React and TypeScript and serves as a practice side project.
