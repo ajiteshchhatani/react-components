@@ -15,6 +15,13 @@ const Sidebar = () => {
           >
             Star Rating
           </Link>
+          <Link
+            className="px-4 py-2 hover:bg-[#e3e3e3]"
+            role="link"
+            to="multi_step_form"
+          >
+            Multi Step Form
+          </Link>
         </ul>
       </nav>
     </div>

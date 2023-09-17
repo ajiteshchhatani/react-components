@@ -5,6 +5,7 @@ import App from "./App.tsx";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import AccordionHome from "./components/Accordion/index.tsx";
 import StarRating from "./components/Star_Rating/index.tsx";
+import MultiStepForm from "./components/MultiStepForm/index.tsx";
 
 const routes = createBrowserRouter(
   [
@@ -19,6 +20,10 @@ const routes = createBrowserRouter(
         {
           path: "star_rating",
           element: <StarRating />,
+        },
+        {
+          path: "multi_step_form",
+          element: <MultiStepForm />,
         },
       ],
     },
