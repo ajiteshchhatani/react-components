@@ -34,10 +34,6 @@ const MultiStepForm = () => {
     handleTabChange();
   };
 
-  const handleTabChangeToHome = () => {
-    setActiveTab(0);
-  };
-
   return (
     <div className="flex flex-col m-auto py-2 px-4 w-1/2 border-2 border-black rounded">
       <p className="self-center text-2xl">Multi step form</p>
