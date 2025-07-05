@@ -6,6 +6,9 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import AccordionHome from "./components/Accordion/index.tsx";
 import StarRating from "./components/Star_Rating/index.tsx";
 import MultiStepForm from "./components/MultiStepForm/index.tsx";
+import SelectWithChip from "./components/SelectWithChip/index.tsx";
+import ThemeSelectDropdown from "./components/ThemeSelectDropdown/index.tsx";
+import InfiniteScroll from "./components/InfiniteScroll/index.tsx";
 
 const routes = createBrowserRouter(
   [
@@ -24,6 +27,18 @@ const routes = createBrowserRouter(
         {
           path: "multi_step_form",
           element: <MultiStepForm />,
+        },
+        {
+          path: "select_with_chips",
+          element: <SelectWithChip />,
+        },
+        {
+          path: "select_with_storage",
+          element: <ThemeSelectDropdown />,
+        },
+        {
+          path: "infinite_scroll",
+          element: <InfiniteScroll />,
         },
       ],
     },

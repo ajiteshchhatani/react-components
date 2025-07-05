@@ -22,6 +22,18 @@ const Sidebar = () => {
           >
             Multi Step Form
           </Link>
+          <Link className="px-4 py-2 hover:bg-[#e3e3e3]" to="select_with_chips">
+            Select with chips
+          </Link>
+          <Link
+            className="px-4 py-2 hover:bg-[#e3e3e3]"
+            to="select_with_storage"
+          >
+            Select with local storage
+          </Link>
+          <Link className="px-4 py-2 hover:bg-[#e3e3e3]" to="infinite_scroll">
+            Infinite Scroll
+          </Link>
         </ul>
       </nav>
     </div>
