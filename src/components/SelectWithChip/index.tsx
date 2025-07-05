@@ -47,7 +47,7 @@ const SelectWithChip = () => {
     };
   }, [menuRef]);
 
-  const handleOptionsMenuClick = (e: React.MouseEvent) => {
+  const handleOptionsMenuClick = () => {
     setOptionsMenuOpen(!optionsMenuOpen);
   };
 

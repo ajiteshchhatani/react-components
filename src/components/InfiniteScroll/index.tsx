@@ -64,8 +64,6 @@ const InfiniteScroll = () => {
   const [loading, setLoading] = React.useState(false);
   const [items, setItems] = React.useState<RandomUserItem[]>([]);
   const [page, setPage] = React.useState(1);
-  const [pageSize, setPageSize] = React.useState(10);
-  const [seed, setSeed] = React.useState<string | null>("foobar");
 
   // Call API on component mount
   useEffect(() => {
@@ -73,9 +71,7 @@ const InfiniteScroll = () => {
     const fetchItems = () => {
       //setLoading(true);
       // return api response for pages after page 1 but after 4 second
-      fetch(
-        `https://randomuser.me/api/?page=${page}&results=${pageSize}&seed=${seed}`
-      )
+      fetch(`https://randomuser.me/api/?page=${page}&results=${10}&seed=foobar`)
         .then((response) => response.json())
         .then((data: RandomUserResponse) => {
           setLoading(false);
@@ -101,7 +97,7 @@ const InfiniteScroll = () => {
       fetchItems();
     }
     //fetchItems();
-  }, [page, pageSize, seed]);
+  }, [page]);
 
   // Check if user has scrolled to 8th item in the list and then load more items by increasing the page number
   useEffect(() => {
@@ -128,7 +124,7 @@ const InfiniteScroll = () => {
         observer.unobserve(intersectTarget);
       }
     };
-  }, [pageSize, items]);
+  }, [items]);
 
   return (
     <div className="h-screen flex justify-center">
